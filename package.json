@@ -1,0 +1,24 @@
+{
+  "name": "jogo_node_chique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roosevelt-Daflon/jogo_node_chique.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roosevelt-Daflon/jogo_node_chique/issues"
+  },
+  "homepage": "https://github.com/Roosevelt-Daflon/jogo_node_chique#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.2"
+  }
+}
