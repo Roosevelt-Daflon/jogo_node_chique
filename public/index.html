@@ -5,19 +5,57 @@
 
         <style>
             #screen{
-                border: 10px solid #ccc;
                 image-rendering: pixelated;
                 image-rendering: crisp-edges;
                 image-rendering: -moz-crisp-edges;
                 width: 650px;
                 height: 650px;
             }
+
+            #score-board
+            {
+                position: absolute;
+                border: 1;
+                right: 1;
+            }
+
+            #geral
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+            }
+
+            body,html
+            {
+                width: 100vw;
+                height: 100vh;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
             
         </style>
         <script src="socket.io/socket.io.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
-    <body>
-        <canvas id="screen" width="10" height="10"></canvas>
+    <body class="text-bg-dark">
+        <div id="geral">
+            <canvas class="shadow rounded-lg " id="screen" width="10" height="10"></canvas>
+        <div id="score-board">
+            <h3>scoreboard</h3>
+            <ul id='lista'>
+                <li></li>
+            </ul>
+        </div>
+        </div>
+        
         <script type="module" src="client.js"></script>
-    </body>
+        
+        </body>
 </html>

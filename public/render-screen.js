@@ -10,7 +10,7 @@ export default function renderScreen(screen, game, requestAnimationFrame, Curren
 
     for (const fruitId in game.state.Fruits) {
         const fruits = game.state.Fruits[fruitId]
-        ctx.fillStyle = "green";
+        ctx.fillStyle = "#8Acc00cc";
         ctx.fillRect(fruits.x, fruits.y, 1, 1);
     }
     

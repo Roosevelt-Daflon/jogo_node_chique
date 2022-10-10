@@ -4,14 +4,14 @@ export default function CreateGame()
         Players: {},
         Fruits: {},
         screen:{
-            width: 15,
-            height: 15
+            width: 50,
+            height: 50
         }
     };
 
     function Start()
     {
-        const frequency = 2000
+        const frequency = 250
 
         setInterval(AddFruit, frequency);
     }
@@ -128,6 +128,10 @@ export default function CreateGame()
                 {
                     player.points += 1;
                     RemoveFruit({fruitId:fruitId})
+                    notifyaAll({
+                        type: 'eat-fruit',
+                        playerId: command.playerId,
+                    })
                 }
             }
         }
